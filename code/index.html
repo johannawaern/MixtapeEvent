@@ -1,30 +1,141 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project 3</title>
-    <!-- dont forget to add a css file and link it here! -->
-  </head>
-  <body>
-    <!-- video or image as a header is cool :) -->
+    <title>Let's Make a Mixtape</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab|Zilla+Slab+Highlight&display=swap"
+        rel="stylesheet" />
+</head>
 
-    <!-- Signup form -->
+<body>
+    <header>
+        <h1 class="event-name">Let's make a Mixtape</h1>
+        <div>
+            <p>
 
-    <section class="accordion">
-      <!-- Accordion -->
-      <h1>FAQ</h1>
+            </p>
+        </div>
+    </header>
 
-      <div class="question" id="section1">Section 1</div>
-      <div class="answer">
-        <p>Lorem ipsum...</p>
-      </div>
 
-      <div class="question" id="section2">Section 2</div>
-      <div class="answer">
-        <p>Lorem ipsum...</p>
-      </div>
+    <section class="container-1">
+        <div class="intro-text">
+            <h1>The Mixtape Event is Back</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                <br>
+                <br>
+                deserunt mollit anim id est laborum. ex ea commodo consequat. Duis aute irure dolorin reprehenderit in
+                voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum. fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+
+            </p>
+        </div>
+        <div class="registration">
+            <h1>Registration</h1>
+            <form action="http://httpbin.org/anything" method="POST">
+                <label>
+                    Name
+                    <input type="text" name="name" required>
+                </label>
+                <label>
+                    E-mail
+                    <input type="email" name="email" required>
+                </label>
+                <!-- try different HTML input types-->
+                <label>
+                    Which song should be the Theme?
+                    <select name="themeSong" required>
+                        <option value="">Select a song</option>
+                        <option value="song1">Take On Me</option>
+                        <option value="song2">I Wanna Dance With Somebody</option>
+                        <option value="song3">Call Me Al</option>
+                        <option value="song4">Främling</option>
+                    </select>
+                </label>
+                <h2>
+                    Food preferences
+                </h2>
+                <label>
+                    <input type="radio" name="food">
+                    Vegetarian
+                </label>
+                <label>
+                    <input type="radio" name="food">
+                    Vegan
+                </label>
+                <label>
+                    <input type="radio" name="food">
+                    I do not eat
+                </label>
+
+                <button type="submit">Registrer and vote</button>
+            </form>
+        </div>
     </section>
-    <!-- dont forget to link the javascript file here! -->
-  </body>
+
+    <div class="divider"></div>
+
+    <section class="container-2">
+
+        <div class="video-container">
+            <video controls autoplay loop muted>
+                <source src="./videos/musicRecorder.mp4" type="video/mp4">
+                <p>This browser doesn't support video...</p>
+            </video>
+        </div>
+
+        <div class="accordion">
+            <h1 class="heading">FAQ</h1>
+            <div class="question1" id="section1">How do I get to the venue?</div>
+            <div class="answer1">
+                <p>Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="question2" id="section2">Can I bring my dog?</div>
+            <div class="answer2">
+                <p>Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="question3" id="section3">
+                Will there be an ice cream machine?
+            </div>
+            <div class="answer3">
+                <p>Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div class="question4" id="section4">
+                Is this event climate neutral?
+            </div>
+            <div class="answer4">
+                <p>Duis aute irure dolorin reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://en.wikipedia.org/wiki/Mixtape">About Mixtape™</a>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
 </html>

@@ -2,6 +2,203 @@
 in this case it is the div with the answer class next to the div with the active class.
 this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
 
-.active + .answer {
-  /* some styling here */
+body {
+    margin: 0;
 }
+
+header {
+    background-image: url(./images/mixtape1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 60vh;
+    padding: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.event-name {
+    font-family: "Zilla Slab Highlight", cursive;
+    font-size: 5rem;
+}
+
+.container-1 {
+    display: flex;
+    margin: 30px auto;
+    max-width: 1040px;
+}
+
+
+.intro-text {
+    background-color: #d99f98;
+    padding: 10px 20px;
+    width: 60%;
+    margin: 25px;
+}
+
+h1 {
+    font-family: 'Zilla Slab Highlight', cursive;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-block-end: 0.5em;
+    margin-block-start: 0.5em;
+
+}
+.intro-text p {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.2rem;
+}
+
+.registration {
+    padding: 10px 30px 30px 30px;
+    background-color: lightgrey;
+    width: 30%;
+    margin: 25px;
+}
+
+input[type=text], input[type=email] {
+    font-size: 15px;
+    display: block;
+    width: 80%;
+    border-radius: 7px;
+    margin-top: 5px;
+}
+
+/* input:valid {
+    background-color: rgba(127, 255, 212, 0.351);
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Zilla Slab', serif;
+}
+
+label:last-child {
+    margin-top: 10px;
+}
+
+select {
+    font-family: 'Zilla Slab', serif;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+button {
+    background-color: #e1bd7c;
+    font-family: 'Zilla Slab', serif;
+    font-size: 1.1rem;
+    max-width: 60%;
+    padding: 7px;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+.divider {
+    background-image: url(./images/mixtape2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 150px;
+}
+
+.container-2 {
+    display: flex;
+    max-width: 1040px;
+    margin: 30px auto;
+}
+
+.video-container {
+    background-color:lightgrey;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+}
+ 
+video {
+    width: 90%;
+}
+
+.accordion {
+    background-color: #e1bd7c;
+    padding: 10px 20px;
+    font-family: 'Zilla Slab', serif;
+    width: 60%; 
+    margin: 25px;     
+}
+
+
+.question1, .question2, .question3, .question4 {
+    font-weight: bold;
+    margin-bottom: 10px; 
+
+}
+.answer1, .answer2, .answer3, .answer4 {
+    display: none;
+    
+}
+
+
+.active + .answer1 {
+   display: block;
+}
+.active + .answer2 {
+    display: block;
+ }
+ .active + .answer3 {
+    display: block;
+ }
+ .active + .answer4 {
+    display: block;
+ }
+
+ footer {
+     background-color: #d99f98;
+     text-align: center;
+     padding: 15px;
+     font-family: 'Zilla Slab Highlight', cursive;
+ }
+
+ a {
+    color: black;  
+    text-decoration: none;
+ }
+
+ a:link {
+     color: black;
+ }
+
+
+ @media (min-width: 668px) and (max-width: 1024px) {
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 15px auto;
+        padding: 10px;
+    }
+    .registration {
+        width: 60%;
+    }
+    /*make all the fields center*/
+
+    input[type=text], input[type=email] {
+        width: 50%;
+    }
+    button {
+        font-size: 0.9rem;
+    }
+ }
+ 
