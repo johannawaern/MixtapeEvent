@@ -31,7 +31,7 @@ header {
 
 .intro-text {
     background-color: #d99f98;
-    padding: 10px 20px;
+    padding: 10px 30px;
     width: 60%;
     margin: 25px;
 }
@@ -103,6 +103,7 @@ button {
     padding: 7px;
     border-radius: 7px;
     margin-top: 10px;
+    cursor: pointer;
 }
 
 .divider {
@@ -136,33 +137,39 @@ video {
     padding: 10px 20px;
     font-family: 'Zilla Slab', serif;
     width: 60%; 
-    margin: 25px;     
+    margin: 25px; 
+    font-size: 1.1rem;    
 }
 
-
-.question1, .question2, .question3, .question4 {
+.question {
     font-weight: bold;
     margin-bottom: 10px; 
-
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
 }
-.answer1, .answer2, .answer3, .answer4 {
+
+.question::after {
+    content: "+";
+}
+
+.question.active::after {
+    content: "-";
+}
+
+.answer {
     display: none;
-    
 }
 
+.active + .answer {
+    display: block;
+ }
 
-.active + .answer1 {
-   display: block;
+hr {
+    border-color: white;
+    border-style: solid;
+    border-width: 0.5px;
 }
-.active + .answer2 {
-    display: block;
- }
- .active + .answer3 {
-    display: block;
- }
- .active + .answer4 {
-    display: block;
- }
 
  footer {
      background-color: #d99f98;

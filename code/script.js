@@ -5,6 +5,12 @@ document.getElementById("section4").onclick = toggle
 
 function toggle() {
   this.classList.toggle("active")
+
+  document.querySelectorAll(".question").forEach(question => {
+    if (question != this) {
+      question.classList.remove("active")
+    }
+  })
 }
 
 
