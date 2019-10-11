@@ -3,209 +3,275 @@ in this case it is the div with the answer class next to the div with the active
 this can be used for the FAQ-accordion. read more here: https://www.w3schools.com/css/css_combinators.asp */
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 header {
-    background-image: url(./images/mixtape1.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    height: 60vh;
-    padding: 50px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.event-name {
-    font-family: "Zilla Slab Highlight", cursive;
-    font-size: 5rem;
-}
-
-.container-1 {
-    display: flex;
-    margin: 30px auto;
-    max-width: 1040px;
-}
-
-
-.intro-text {
-    background-color: #d99f98;
-    padding: 10px 30px;
-    width: 60%;
-    margin: 25px;
-}
-
-h1 {
-    font-family: 'Zilla Slab Highlight', cursive;
-    text-align: center;
-    font-size: 2rem;
-}
-
-h2 {
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.3rem;
-    font-weight: bold;
-    margin-block-end: 0.5em;
-    margin-block-start: 0.5em;
-
-}
-.intro-text p {
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.2rem;
-}
-
-.registration {
-    padding: 10px 30px 30px 30px;
-    background-color: lightgrey;
-    width: 30%;
-    margin: 25px;
-}
-
-input[type=text], input[type=email] {
-    font-size: 15px;
-    display: block;
-    width: 80%;
-    border-radius: 7px;
-    margin-top: 5px;
-}
-
-/* input:valid {
-    background-color: rgba(127, 255, 212, 0.351);
-} */
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    display: block;
-    margin-bottom: 15px;
-    font-family: 'Zilla Slab', serif;
-}
-
-label:last-child {
-    margin-top: 10px;
-}
-
-select {
-    font-family: 'Zilla Slab', serif;
-    font-size: 1rem;
-    margin-top: 5px;
-}
-
-button {
-    background-color: #e1bd7c;
-    font-family: 'Zilla Slab', serif;
-    font-size: 1.1rem;
-    max-width: 60%;
-    padding: 7px;
-    border-radius: 7px;
-    margin-top: 10px;
-    cursor: pointer;
+  background-image: url(./images/mixtape_1300.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 60vh;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
-    background-image: url(./images/mixtape2.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 150px;
+  background-image: url(./images/mixtape_1300.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 150px;
+}
+
+.event-name {
+  font-family: "Zilla Slab Highlight", cursive;
+  font-size: 5rem;
+}
+
+.container-1 {
+  display: flex;
+  margin: 30px auto;
+  max-width: 1040px;
+}
+
+.intro-text {
+  background-color: #d99f98;
+  padding: 10px 30px;
+  width: 60%;
+  margin: 25px;
+}
+
+h1 {
+  font-family: "Zilla Slab Highlight", cursive;
+  text-align: center;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-block-end: 0.5em;
+  margin-block-start: 0.5em;
+}
+.intro-text p {
+  font-family: "Zilla Slab", serif;
+  font-size: 1.2rem;
+}
+
+.registration {
+  padding: 10px 30px 30px 30px;
+  background-color: lightgrey;
+  width: 30%;
+  margin: 25px;
+}
+
+input[type="text"],
+input[type="email"] {
+  font-size: 15px;
+  display: block;
+  max-width: 100%;
+  width: 235px;
+  border-radius: 7px;
+  margin-top: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: "Zilla Slab", serif;
+}
+
+label:last-child {
+  margin-top: 10px;
+}
+
+select {
+  font-family: "Zilla Slab", serif;
+  font-size: 1rem;
+  margin-top: 5px;
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  background-color: #e1bd7c;
+  font-family: "Zilla Slab", serif;
+  font-size: 1.1rem;
+  max-width: 60%;
+  padding: 7px;
+  border-radius: 7px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .container-2 {
-    display: flex;
-    max-width: 1040px;
-    margin: 30px auto;
+  display: flex;
+  max-width: 1040px;
+  margin: 30px auto;
 }
 
 .video-container {
-    background-color:lightgrey;
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
+  background-color: lightgrey;
+  padding: 10px 30px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px;
 }
- 
+
 video {
-    width: 90%;
+  width: 110%;
 }
 
 .accordion {
-    background-color: #e1bd7c;
-    padding: 10px 20px;
-    font-family: 'Zilla Slab', serif;
-    width: 60%; 
-    margin: 25px; 
-    font-size: 1.1rem;    
+  background-color: #e1bd7c;
+  padding: 10px 30px;
+  font-family: "Zilla Slab", serif;
+  width: 60%;
+  margin: 25px;
+  font-size: 1.1rem;
 }
 
 .question {
-    font-weight: bold;
-    margin-bottom: 10px; 
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .question::after {
-    content: "+";
+  content: "+";
 }
 
 .question.active::after {
-    content: "-";
+  content: "-";
 }
 
 .answer {
-    display: none;
+  display: none;
 }
 
 .active + .answer {
-    display: block;
- }
-
-hr {
-    border-color: white;
-    border-style: solid;
-    border-width: 0.5px;
+  display: block;
 }
 
- footer {
-     background-color: #d99f98;
-     text-align: center;
-     padding: 15px;
-     font-family: 'Zilla Slab Highlight', cursive;
- }
+hr {
+  border-color: white;
+  border-style: solid;
+  border-width: 0.5px;
+}
 
- a {
-    color: black;  
-    text-decoration: none;
- }
+footer {
+  background-color: #d99f98;
+  text-align: center;
+  padding: 15px;
+  font-family: "Zilla Slab Highlight", cursive;
+}
 
- a:link {
-     color: black;
- }
+a {
+  color: black;
+  text-decoration: none;
+}
 
+a:link {
+  color: black;
+}
 
- @media (min-width: 668px) and (max-width: 1024px) {
-    .container-1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 15px auto;
-        padding: 10px;
-    }
-    .registration {
-        width: 60%;
-    }
-    /*make all the fields center*/
+@media (min-width: 668px) and (max-width: 1024px) {
+  header {
+    background-image: url(./images/mixtape_1024.jpg);
+  }
+  .event-name {
+    font-size: 4rem;
+  }
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  .intro-text {
+    width: 50%;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .registration {
+    width: 50%;
+  }
+  .form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  .accordion {
+    width: 50%;
+  }
+  .video-container {
+    width: 50%;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
 
-    input[type=text], input[type=email] {
-        width: 50%;
-    }
-    button {
-        font-size: 0.9rem;
-    }
- }
- 
+@media (max-width: 667px) {
+  header {
+    background-image: url(./images/mixtape_667.jpg);
+  }
+  .event-name {
+    font-size: 3rem;
+  }
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .intro-text {
+    width: 50%;
+  }
+  .intro-text p {
+    font-size: 1rem;
+  }
+  .registration {
+    width: 50%;
+  }
+  .container-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 15px auto;
+    padding: 10px;
+  }
+  .accordion {
+    width: 50%;
+  }
+  .video-container {
+    width: 50%;
+  }
+  button {
+    font-size: 0.9rem;
+  }
+}
