@@ -1,9 +1,13 @@
-`PROJECT 3` My second Technigo Boot Camp Project
-
 # Build a Business Site
 
-This week’s project is to create a site for a company of your choice. 
+https://mixtape-event.netlify.com/
+Week 3 of Technigo's Bootcamp
 
-The website should contain these three parts:
+Create a site for a company or event, containing these three parts:
 
 | hero image/video | signup form | accordion |
+
+
+## Design 🎨
+
+I came up wiht the theme and design of the page.
