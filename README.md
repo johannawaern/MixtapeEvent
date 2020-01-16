@@ -1,13 +1,7 @@
-# Build a Business Site
+# Event Site
 
 https://mixtape-event.netlify.com/
-Week 3 of Technigo's Bootcamp
 
-Create a site for a company or event, containing these three parts:
+A page for a mockup event, containing a signup form and accordion.
 
-| hero image/video | signup form | accordion |
-
-
-## Design 🎨
-
-I came up wiht the theme and design of the page.
+Built in HTML, CSS and JavaScript
